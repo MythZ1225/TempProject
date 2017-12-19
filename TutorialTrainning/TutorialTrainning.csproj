@@ -97,6 +97,8 @@
     <Compile Include="Assets\Scritps\NCCU\UFOCameraController.cs" />
     <Compile Include="Assets\Scritps\NCCU\UFOControler.cs" />
     <Compile Include="Assets\Scritps\NCCU\W1AngerBird\ProjectileDragging.cs" />
+    <Compile Include="Assets\Scritps\NCCU\W1AngerBird\ProjectileFellow.cs" />
+    <Compile Include="Assets\Scritps\NCCU\W1AngerBird\Reseter.cs" />
     <Compile Include="Assets\Scritps\TanksScripts\Camera\CameraControl.cs" />
     <Compile Include="Assets\Scritps\TanksScripts\Managers\GameManager.cs" />
     <Compile Include="Assets\Scritps\TanksScripts\Managers\TankManager.cs" />
