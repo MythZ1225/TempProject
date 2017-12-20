@@ -28,12 +28,14 @@ public class Reseter : MonoBehaviour {
 
 	}
 
+
     void OnTriggerExit2D(Collider2D other)
     {
         if (other.GetComponent<Rigidbody2D>() == projectile)
         {
             Reset();
         }
+        Debug.Log("OnTriggerExit2D");
     }
 
     void Reset()
