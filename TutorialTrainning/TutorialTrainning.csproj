@@ -99,6 +99,7 @@
     <Compile Include="Assets\Scritps\NCCU\W1AngerBird\ProjectileDragging.cs" />
     <Compile Include="Assets\Scritps\NCCU\W1AngerBird\ProjectileFellow.cs" />
     <Compile Include="Assets\Scritps\NCCU\W1AngerBird\Reseter.cs" />
+    <Compile Include="Assets\Scritps\NCCU\W1AngerBird\TargetDamage.cs" />
     <Compile Include="Assets\Scritps\TanksScripts\Camera\CameraControl.cs" />
     <Compile Include="Assets\Scritps\TanksScripts\Managers\GameManager.cs" />
     <Compile Include="Assets\Scritps\TanksScripts\Managers\TankManager.cs" />
@@ -107,6 +108,8 @@
     <Compile Include="Assets\Scritps\TanksScripts\Tank\TankMovement.cs" />
     <Compile Include="Assets\Scritps\TanksScripts\Tank\TankShooting.cs" />
     <Compile Include="Assets\Scritps\TanksScripts\UI\UIDirectionControl.cs" />
+    <Compile Include="Assets\Scritps\Unity Live Training\HoverCamera.cs" />
+    <Compile Include="Assets\Scritps\Unity Live Training\HoverMoter.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\TutorialInfo.cs" />
     <Compile Include="Assets\UnityChan\Scripts\CameraController.cs" />
     <Compile Include="Assets\UnityChan\Scripts\FaceUpdate.cs" />
