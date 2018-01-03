@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scene/HoverCar.unity
+- path: Assets/Scene/NCCUWeek43DFPS.unity
   isLoaded: 1
   isActive: 1

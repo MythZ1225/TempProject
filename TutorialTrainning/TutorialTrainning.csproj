@@ -70,6 +70,12 @@
     <Reference Include="DOTween">
       <HintPath>Assets\Demigiant\DOTween\DOTween.dll</HintPath>
     </Reference>
+    <Reference Include="GETween">
+      <HintPath>Assets\GUI Animator\Common\Plugins\GETween.dll</HintPath>
+    </Reference>
+    <Reference Include="GUIAnimatorFREE">
+      <HintPath>Assets\GUI Animator\GUI Animator FREE\Plugins\GUIAnimatorFREE.dll</HintPath>
+    </Reference>
     <Reference Include="Assembly-UnityScript-firstpass">
       <HintPath>Library\ScriptAssemblies\Assembly-UnityScript-firstpass.dll</HintPath>
     </Reference>
@@ -83,6 +89,23 @@
   <ItemGroup>
     <Compile Include="Assets\Demigiant\DOTween\Examples\Basics.cs" />
     <Compile Include="Assets\Demigiant\DOTween\Examples\Sequences.cs" />
+    <Compile Include="Assets\Elementals\Demo\Scripts\GE_Elementals_Demo.cs" />
+    <Compile Include="Assets\GE Common Assets\GE Orbit Camera\Scripts\GE_OrbitCamera.cs" />
+    <Compile Include="Assets\GE Common Assets\GE Orbit Camera\Scripts\GE_OrbitCameraUI.cs" />
+    <Compile Include="Assets\GE Common Assets\GE Toggle Full Screen\Scripts\GE_ToggleFullScreenUI.cs" />
+    <Compile Include="Assets\GE Common Assets\Scripts\GE_UIResponder.cs" />
+    <Compile Include="Assets\GUI Animator\GUI Animator FREE\Demo (CSharp)\Scripts\GA_FREE_Demo00.cs" />
+    <Compile Include="Assets\GUI Animator\GUI Animator FREE\Demo (CSharp)\Scripts\GA_FREE_Demo01.cs" />
+    <Compile Include="Assets\GUI Animator\GUI Animator FREE\Demo (CSharp)\Scripts\GA_FREE_Demo02.cs" />
+    <Compile Include="Assets\GUI Animator\GUI Animator FREE\Demo (CSharp)\Scripts\GA_FREE_Demo03.cs" />
+    <Compile Include="Assets\GUI Animator\GUI Animator FREE\Demo (CSharp)\Scripts\GA_FREE_Demo04.cs" />
+    <Compile Include="Assets\GUI Animator\GUI Animator FREE\Demo (CSharp)\Scripts\GA_FREE_Demo05.cs" />
+    <Compile Include="Assets\GUI Animator\GUI Animator FREE\Demo (CSharp)\Scripts\GA_FREE_Demo06.cs" />
+    <Compile Include="Assets\GUI Animator\GUI Animator FREE\Demo (CSharp)\Scripts\GA_FREE_Demo07.cs" />
+    <Compile Include="Assets\GUI Animator\GUI Animator FREE\Demo (CSharp)\Scripts\GA_FREE_Demo08.cs" />
+    <Compile Include="Assets\GUI Animator\GUI Animator FREE\Demo (CSharp)\Scripts\GA_FREE_DemoPlaySound.cs" />
+    <Compile Include="Assets\GUI Animator\GUI Animator FREE\Demo (CSharp)\Scripts\GA_FREE_OpenOtherScene.cs" />
+    <Compile Include="Assets\GUI Animator\GUI Animator FREE\Demo Basic (CSharp)\Scripts\GUIAnimatorFREEDemo.cs" />
     <Compile Include="Assets\Scritps\C%23 Scritps\API_Exp.cs" />
     <Compile Include="Assets\Scritps\C%23 Scritps\API_Exp2.cs" />
     <Compile Include="Assets\Scritps\C%23 Scritps\NewBehaviourScript.cs" />
@@ -100,6 +123,12 @@
     <Compile Include="Assets\Scritps\NCCU\W1AngerBird\ProjectileFellow.cs" />
     <Compile Include="Assets\Scritps\NCCU\W1AngerBird\Reseter.cs" />
     <Compile Include="Assets\Scritps\NCCU\W1AngerBird\TargetDamage.cs" />
+    <Compile Include="Assets\Scritps\NCCU\W43DFPS\JumpSensor.cs" />
+    <Compile Include="Assets\Scritps\NCCU\W43DFPS\NCCUBulletScript.cs" />
+    <Compile Include="Assets\Scritps\NCCU\W43DFPS\NCCUW4GunManager.cs" />
+    <Compile Include="Assets\Scritps\NCCU\W43DFPS\NCCUW4KillSelf.cs" />
+    <Compile Include="Assets\Scritps\NCCU\W43DFPS\NCCUW4Monster.cs" />
+    <Compile Include="Assets\Scritps\NCCU\W43DFPS\PlayerControler.cs" />
     <Compile Include="Assets\Scritps\TanksScripts\Camera\CameraControl.cs" />
     <Compile Include="Assets\Scritps\TanksScripts\Managers\GameManager.cs" />
     <Compile Include="Assets\Scritps\TanksScripts\Managers\TankManager.cs" />
@@ -117,6 +146,17 @@
     <Compile Include="Assets\UnityChan\Scripts\SceneLoader.cs" />
     <Compile Include="Assets\UnityChan\Scripts\ThirdPersonCamera.cs" />
     <Compile Include="Assets\UnityChan\Scripts\UnityChanControlScriptWithRgidBody.cs" />
+    <Compile Include="Assets\WarZone\CrossPlatformInput\Scripts\CrossPlatformInputManager.cs" />
+    <Compile Include="Assets\WarZone\CrossPlatformInput\Scripts\PlatformSpecific\MobileInput.cs" />
+    <Compile Include="Assets\WarZone\CrossPlatformInput\Scripts\PlatformSpecific\StandaloneInput.cs" />
+    <Compile Include="Assets\WarZone\CrossPlatformInput\Scripts\VirtualInput.cs" />
+    <Compile Include="Assets\WarZone\Scripts\DestroyObject.cs" />
+    <Compile Include="Assets\WarZone\Scripts\GunController.cs" />
+    <Compile Include="Assets\WarZone\Scripts\TurretController.cs" />
+    <Compile Include="Assets\WarZone\Vehicles\Car\Scripts\CarAudio.cs" />
+    <Compile Include="Assets\WarZone\Vehicles\Car\Scripts\CarController.cs" />
+    <Compile Include="Assets\WarZone\Vehicles\Car\Scripts\CarUserControl.cs" />
+    <Compile Include="Assets\WarZone\Vehicles\Car\Scripts\WheelEffects.cs" />
     <Compile Include="Assets\_Completed-Assets\Scripts\Camera\CameraControl.cs" />
     <Compile Include="Assets\_Completed-Assets\Scripts\Managers\GameManager.cs" />
     <Compile Include="Assets\_Completed-Assets\Scripts\Managers\TankManager.cs" />
@@ -130,9 +170,16 @@
     <None Include="Assets\ArtAsset\Fonts\Bowlby_One\OFL.txt" />
     <None Include="Assets\ArtAsset\Shader\HUE_Rotate.shader" />
     <None Include="Assets\ArtAsset\Shader\sprite-tiled.shader" />
+    <None Include="Assets\Cartoon Soldier\Readme.txt" />
     <None Include="Assets\Demigiant\DOTween\DOTween.XML" />
     <None Include="Assets\Demigiant\DOTween\Editor\DOTweenEditor.XML" />
     <None Include="Assets\Demigiant\DOTween\readme.txt" />
+    <None Include="Assets\Earthborn Troll\Shader\Alpha_Texture.shader" />
+    <None Include="Assets\Earthborn Troll\Shader\DoubleSided-Light-Spec.shader" />
+    <None Include="Assets\Elementals\Readme.txt" />
+    <None Include="Assets\GE Common Assets\Readme.txt" />
+    <None Include="Assets\GUI Animator\GUI Animator FREE\!How to.txt" />
+    <None Include="Assets\GUI Animator\GUI Animator FREE\Readme.txt" />
     <None Include="Assets\Standard Assets (Mobile)\Shaders\Lightmap Shaders (Legacy)\Mobile Lightmap AlphaTest.shader" />
     <None Include="Assets\Standard Assets (Mobile)\Shaders\Lightmap Shaders (Legacy)\Mobile Lightmap Only.shader" />
     <None Include="Assets\Standard Assets (Mobile)\Shaders\Lightmap Shaders (Legacy)\Mobile Lightmap Reflective.shader" />
@@ -221,6 +268,7 @@
     <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_hair_ds.shader" />
     <None Include="Assets\UnityChan\Stage\Shader\AlphaMask.shader" />
     <None Include="Assets\UnityChan\license.txt" />
+    <None Include="Assets\WarZone\Vehicles\Car\CarGuidelines.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
