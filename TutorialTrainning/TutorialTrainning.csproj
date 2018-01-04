@@ -125,6 +125,7 @@
     <Compile Include="Assets\Scritps\NCCU\W1AngerBird\TargetDamage.cs" />
     <Compile Include="Assets\Scritps\NCCU\W43DFPS\JumpSensor.cs" />
     <Compile Include="Assets\Scritps\NCCU\W43DFPS\NCCUBulletScript.cs" />
+    <Compile Include="Assets\Scritps\NCCU\W43DFPS\NCCUW4BreakableItems.cs" />
     <Compile Include="Assets\Scritps\NCCU\W43DFPS\NCCUW4GunManager.cs" />
     <Compile Include="Assets\Scritps\NCCU\W43DFPS\NCCUW4KillSelf.cs" />
     <Compile Include="Assets\Scritps\NCCU\W43DFPS\NCCUW4Monster.cs" />

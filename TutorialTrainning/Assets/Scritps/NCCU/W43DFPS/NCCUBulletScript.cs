@@ -22,10 +22,19 @@ public class NCCUBulletScript : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.GetComponent<Animator>())
+        
+        if (other.gameObject.GetComponent<Animator>() )
         {
             other.gameObject.SendMessage("Hit", damageValue);
+            //Debug.Log("Hit");
         }
+        if (other.gameObject.GetComponent<NCCUW4BreakableItems>())
+        {
+            other.gameObject.SendMessage("Hit", damageValue);
+            //Debug.Log("Hit");
+        }
+        
+
 
         explosion.gameObject.transform.parent = null;
         explosion.gameObject.SetActive(true);
