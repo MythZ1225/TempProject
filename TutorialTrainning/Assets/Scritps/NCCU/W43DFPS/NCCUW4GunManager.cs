@@ -10,13 +10,29 @@ public class NCCUW4GunManager : MonoBehaviour {
     private float shootCount = 0;
     private float muzzleCount = 0;
 
+    private AudioSource gunShootSound;
+
     public GameObject MuzzleFlash;
     public GameObject bulletCandidate;
+
+    void Start()
+    {
+        gunShootSound = this.GetComponent<AudioSource>();
+    }
+
+
 
     public void TryTriggerGun()
     {
         if (shootCount <=0 )
         {
+            //先清掉舊音效
+            gunShootSound.Stop();
+            //設定一點隨機
+            gunShootSound.pitch = Random.Range(0.8f, 1);
+            //撥放
+            gunShootSound.Play();
+
             this.transform.DOShakeRotation(MinmusShootTime * 0.8f, 3f);
 
             muzzleCount = MuzzleShowTime;
@@ -35,10 +51,7 @@ public class NCCUW4GunManager : MonoBehaviour {
     }
 
 	// Use this for initialization
-	void Start () {
-	
-	}
-	
+
 	// Update is called once per frame
 	void Update () {
         if (shootCount >0)

@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
+using DG.Tweening;
 
-public class PlayerControler : MonoBehaviour {
+public class NCCUW3PlayerControler : MonoBehaviour {
     public float MoveSpeed;
     public Transform RotateY;
     public Transform RotateX;
@@ -16,6 +17,9 @@ public class PlayerControler : MonoBehaviour {
 
     public GameObject PlayerObj;
 
+    public NCCUGUIManagerScript _UIManager;
+    public int hp = 100;
+
     private Animator _animatorControler;
     private float currentSpeed = 0;
     private float defMoveSpeed;
@@ -24,6 +28,7 @@ public class PlayerControler : MonoBehaviour {
         _animatorControler = PlayerObj.GetComponent<Animator>();
         
         defMoveSpeed = MoveSpeed;
+        _UIManager.SetHp(hp);
     }
 	
 	// Update is called once per frame
@@ -92,4 +97,31 @@ public class PlayerControler : MonoBehaviour {
 
         RotateX.transform.localEulerAngles = new Vector3(-CurrentRotateX, 0, 0);
 	}
+
+    public void Hit(int value)
+    {
+        if (hp<=0)
+        {
+            return;
+        }
+
+        hp -= value;
+        _UIManager.SetHp(hp);
+
+        if (hp > 0)
+        {
+            _UIManager.playHitAnimation();
+        }
+        else
+        {
+            _UIManager.PlayDieAnimation();
+
+            playerRB.gameObject.GetComponent<Collider>().enabled = false;
+            playerRB.useGravity = false;
+            playerRB.velocity = Vector3.zero;
+            this.enabled = false;
+            RotateX.transform.DOLocalRotate(new Vector3(-60,0,0),0.5f);
+            RotateY.transform.DOLocalMoveY(1.5f, 0.5f).SetRelative(true);
+        }      
+    }
 }
