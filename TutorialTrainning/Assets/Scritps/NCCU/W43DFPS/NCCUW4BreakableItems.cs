@@ -63,7 +63,7 @@ public class NCCUW4BreakableItems : MonoBehaviour {
     {
         if (this.gameObject.GetComponent<NCCUW4BreakableItems>())
         {
-           Debug.Log("NCCUW4BreakableItems");
+           //Debug.Log("NCCUW4BreakableItems");
         }
     }
 

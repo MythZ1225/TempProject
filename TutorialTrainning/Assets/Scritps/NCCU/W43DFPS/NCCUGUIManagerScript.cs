@@ -2,6 +2,8 @@
 using System.Collections;
 using UnityEngine.UI;
 using DG.Tweening;
+using UnityEngine.SceneManagement;
+
 
 public class NCCUGUIManagerScript : MonoBehaviour {
     public Image BlackCover;
@@ -27,7 +29,12 @@ public class NCCUGUIManagerScript : MonoBehaviour {
     public void PlayDieAnimation()
     {
         BloodBlur.color = Color.white;
-        DOTween.To(() => BlackCover.color, (x) => BlackCover.color = x, new Color(0, 0, 0, 1), 1f).SetDelay(3);
+        DOTween.To(() => BlackCover.color, (x) => BlackCover.color = x, new Color(0, 0, 0, 1), 1f).SetDelay(3)
+            .OnComplete(()=> 
+            {
+                SceneManager.LoadScene("NCCUWeek43DFPS");
+            }            
+            );
     }
 
     public void SetHp(int hP)

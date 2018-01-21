@@ -132,6 +132,7 @@
     <Compile Include="Assets\Scritps\NCCU\W43DFPS\NCCUW4KillSelf.cs" />
     <Compile Include="Assets\Scritps\NCCU\W43DFPS\NCCUW4Monster.cs" />
     <Compile Include="Assets\Scritps\NCCU\W43DFPS\NCCUW5CollisionListScript.cs" />
+    <Compile Include="Assets\Scritps\NCCU\W43DFPS\NCCUW5MonsterSpawn.cs" />
     <Compile Include="Assets\Scritps\TanksScripts\Camera\CameraControl.cs" />
     <Compile Include="Assets\Scritps\TanksScripts\Managers\GameManager.cs" />
     <Compile Include="Assets\Scritps\TanksScripts\Managers\TankManager.cs" />
