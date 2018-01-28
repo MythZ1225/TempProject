@@ -13,7 +13,7 @@ public class PlayerHealth : MonoBehaviour
     public AudioClip deathClip;
     public float flashSpeed = 5f;
     public Color flashColour = new Color(1f, 0f, 0f, 0.1f);
-
+    public float DelayTime = 3f;
 
     Animator anim;
     AudioSource playerAudio;
@@ -21,6 +21,7 @@ public class PlayerHealth : MonoBehaviour
     PlayerShooting playerShooting;
     bool isDead;
     bool damaged;
+    float restartTimer=0;
 
 
     void Awake ()
@@ -77,11 +78,12 @@ public class PlayerHealth : MonoBehaviour
 
         playerMovement.enabled = false;
         playerShooting.enabled = false;
+
     }
 
 
     public void RestartLevel ()
     {
-        SceneManager.LoadScene (0);
+        SceneManager.LoadScene(0);
     }
 }
