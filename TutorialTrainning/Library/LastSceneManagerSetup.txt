@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scene/NCCUWeek43DFPS.unity
+- path: Assets/Scene/HelloMobile.unity
   isLoaded: 1
   isActive: 1
